@@ -70,6 +70,47 @@ body {
   margin-top: 10px;
 }
 
+.info-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 15px 20px 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a.info-item:hover {
+  color: #fff;
+}
+
+.info-icon {
+  width: 18px;
+  height: 18px;
+  filter: invert(0.7);
+  flex-shrink: 0;
+}
+
+.location-icon {
+  background-image: url("https://unicons.iconscout.com/release/v1.0.0/svg/map-marker.svg");
+}
+
+.work-icon {
+  background-image: url("https://unicons.iconscout.com/release/v1.0.0/svg/briefcase.svg");
+}
+
+.education-icon {
+  background-image: url("https://unicons.iconscout.com/release/v1.0.0/svg/graduation-hat.svg");
+}
+
 .links {
   display: flex;
   gap: 10px;
@@ -87,6 +128,12 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.linkedin:hover,
+.github:hover,
+.email:hover {
+  filter: invert(0.75);
 }
 
 .linkedin {
@@ -123,6 +170,14 @@ body {
     padding: 20px 15px;
   }
 
+  .info-items {
+    padding: 0px 12px 15px 12px;
+  }
+
+  .info-item {
+    font-size: 0.9rem;
+  }
+
   .links {
     padding: 0px 15px 20px 15px;
   }
@@ -136,5 +191,14 @@ body {
 
   .name {
     font-size: 1.5rem;
+  }
+
+  .info-item {
+    font-size: 0.85rem;
+  }
+
+  .info-icon {
+    width: 16px;
+    height: 16px;
   }
 }
