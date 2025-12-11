@@ -127,6 +127,7 @@ a.info-item:hover {
 
 .linkedin,
 .github,
+.resume,
 .email {
   width: 36px;
   height: 36px;
@@ -138,6 +139,7 @@ a.info-item:hover {
 
 .linkedin:hover,
 .github:hover,
+.resume:hover,
 .email:hover {
   filter: invert(0.75);
 }
@@ -148,6 +150,10 @@ a.info-item:hover {
 
 .github {
   background-image: url("https://unicons.iconscout.com/release/v1.0.0/svg/github.svg");
+}
+
+.resume {
+  background-image: url("https://unicons.iconscout.com/release/v1.0.0/svg/file-alt.svg");
 }
 
 .email {
@@ -254,13 +260,31 @@ a.info-item:hover {
   min-width: 220px;
 }
 
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skill-category {
+  padding-left: 15px;
+  border-left: 3px solid #999;
+}
+
+.category-title {
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .skills-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-left: 15px;
-  border-left: 3px solid #999;
+  gap: 6px;
 }
 
 .skills-list li {
